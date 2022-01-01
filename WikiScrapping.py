@@ -184,13 +184,10 @@ class WikiScrapper:
             db_search = mongoClient.findfirstRecord(db_name="Wiki-Scrapper",
                                                     collection_name=searchString,
                                                     query={'input_keyword': input_keyword})
-            print(db_search)
             if db_search is not None:
-                print("Yes present" + str(len(db_search)))
                 logger.info(f"{searchString} : Found in DB (scrapper)")
             else:
                 logger.info(f"{searchString} : Not found in DB (scrapper)")
-            print("False")
 
             ### Get Summary of webpage
             summary = self.pageSummary()
@@ -203,6 +200,11 @@ class WikiScrapper:
             ref_list = soup.find_all('cite', class_="citation")    # Get all links under 'References'
             ref_url_list = self.extractRef(ref_list=ref_list)      #Prepare a formatted reference link
             logger.info(f"{searchString} : Reference links extracted (scrapper)")
+
+            page = []
+            soup = []
+            ref_list = []
+
 
             # Get all the images from webpage
             #open URL
@@ -255,6 +257,8 @@ class WikiScrapper:
 
             for j in char:
                 new_string = new_string.replace(j, '')
+
+            char=[]
 
             return new_string
         except Exception as e:
@@ -313,7 +317,7 @@ class WikiScrapper:
             try:
                 article = self.removeNos(string=article, count=500)
             except:
-                print('Error in removeNos()')
+                raise Exception(f"(pageSummary) - Error in removeNos().\n" + str(e))
 
             # Summarize webpage content
             try:
@@ -323,6 +327,11 @@ class WikiScrapper:
 
             # Remove unwanted \n from text
             summary = self.removeNs(string=summary)
+
+            page_text = []
+            p_tags_text = []
+            sentence_list = []
+            article = ''
 
             return summary
         except Exception as e:
@@ -353,6 +362,7 @@ class WikiScrapper:
                         count += 1
                         url_pkg = []
 
+            all_links = []
 
             return url_list
         except Exception as e:

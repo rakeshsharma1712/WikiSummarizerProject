@@ -87,6 +87,8 @@ def index():
                             for l in value.values():
                                 ref_list.append(l)
 
+                page_data = []
+
                 logger.info(f"{searchString} : Read DB and formatted result (app)")
 
                 return render_template('results.html', reSummary=summary,reImage=image_list,reRef=ref_list)
@@ -143,6 +145,8 @@ def wikisummary():
                         elif key == 'reference':
                             for l in value.values():
                                 ref_list.append(l)
+
+                page_data = []
 
                 logger.info(f"Formatted result (wikisummary)")
                 scrapper_object.closeConnection()
