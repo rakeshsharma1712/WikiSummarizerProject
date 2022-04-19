@@ -55,5 +55,8 @@ Commit your code to the repository and deploy it to Heroku using Git.
 
 
 ## Technologies Used
+![python](https://user-images.githubusercontent.com/95287626/164052111-9622c7ef-8649-4fdb-bb54-bd180005dca1.svg)
 
-
+![flask](https://user-images.githubusercontent.com/95287626/164052114-2e6a8326-f30f-4983-b4fb-4d9c89262fc1.png)
+![gunicorn](https://user-images.githubusercontent.com/95287626/164052117-9df82947-7663-4c9d-b892-94be11e2dcac.png)
+![html](https://user-images.githubusercontent.com/95287626/164052118-77870658-42a9-4796-b215-2d5b46aadb12.png)
