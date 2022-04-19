@@ -13,8 +13,10 @@ Alongwith summary and images, it also lists all the reference link from wiki pag
 
 ## Demo
 
-- Image #1
-- Image #2
+![Demo1](https://user-images.githubusercontent.com/95287626/164051227-471fd1e2-9c08-4364-9afa-fddc06da26b8.jpg)
+![Demo2](https://user-images.githubusercontent.com/95287626/164051219-b41eefbc-c6dd-473a-84c0-1807c8e6a863.jpg)
+![Demo3](https://user-images.githubusercontent.com/95287626/164051223-c191844c-935e-4fa8-a76a-c1507d75857f.jpg)
+![Demo4](https://user-images.githubusercontent.com/95287626/164051226-08ff7e86-3c8c-46ae-9870-30ca40fc82de.jpg)
 
 
 
@@ -25,7 +27,8 @@ Alongwith summary and images, it also lists all the reference link from wiki pag
 
 Login or signup in order to create virtual app. You can either connect your github profile or download ctl to manually deploy this project.
 
-- Heroku image
+![Heroku](https://user-images.githubusercontent.com/95287626/164051385-e0bccac5-5fbb-4cc8-8ed3-e45b3f2dbed7.JPG)
+
 
 Create a new Git repository
 Initialize a git repository in a new or existing directory
@@ -53,5 +56,4 @@ Commit your code to the repository and deploy it to Heroku using Git.
 
 ## Technologies Used
 
-! [image] https://camo.githubusercontent.com/3638770a498aa8a62be0fb35f9217dbc78a50d739e1f6cdc64ef88def23aa1ec/68747470733a2f2f666c61736b2e70616c6c65747370726f6a656374732e636f6d2f656e2f312e312e782f5f696d616765732f666c61736b2d6c6f676f2e706e67
 
