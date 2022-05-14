@@ -2,7 +2,7 @@
 # Wikipedia Summarizer
 
 This project is created to accept an input keyword from user and search it on https://en.wikipedia.org.
-Instead of showing the complete wikipedia page, this tool returns the summary and corresponding images to user.
+Instead of showing the complete wikipedia page, this tool returns the brief summary and corresponding images to user.
 Alongwith summary and images, it also lists all the reference link from wiki page.
 
 
